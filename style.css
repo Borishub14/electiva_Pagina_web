@@ -1,18 +1,29 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Open sans", "Big Shoulders Stencil";
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
 }
 
-h1{font-size: 3.5em;}
-h2{font-size: 2.5em;}
-h3{font-size: 2em;}
-p{font-size: 1.2em;}
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+}
 
 button {
     font-size: 1.25em;
@@ -25,20 +36,20 @@ button {
     color: white;
 }
 
-button:hover{
-    background-color: rgb(137,106,34);
+button:hover {
+    background-color: rgb(137, 106, 34);
 }
 
-.container{
+.container {
     max-width: 1400px;
-    margin:auto;
+    margin: auto;
 }
 
-header{
+header {
     background-color: rgb(239, 218, 135);
 }
 
-header .Logo{
+header .Logo {
     color: brown;
     font-weight: bold;
     font-size: 1.5em;
@@ -46,26 +57,97 @@ header .Logo{
     margin: 0;
 }
 
-header nav{
+header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 25px;
 }
 
-#hero{
+#hero {
     display: flex;
     align-items: center;
     text-align: center;
     flex-direction: column;
     justify-content: center;
     height: 90hv;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.3)
-    ), url(img/robot.jpg);
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.3)), url(img/robot.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+}
+
+#quienessomos .container {
+    text-align: center;
+    padding: 100px 15px;
+}
+
+#servicios {
+    background-color: rgb(26, 25, 25);
+    color: white;
+    text-align: center;
+}
+
+#servicios .container {
+    padding: 70px, 0px;
+}
+
+#servicios .h2 {
+    font-size: 3.0em;
+    margin-top: 0px;
+}
+
+#servicios .carta {
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.carta:nth-child(1) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.3)), url(img/image1.jpg);
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.3)), url(img/image2.jpg);
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.3)), url(img/image3.jpg);
+}
+
+#servicios p {
+    display: none;
+}
+
+#cotizacion .container {
+    margin: 16px 0px;
+    font-weight: bold
+}
+
+#cotizacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    color: white;
+    font-family: 2.5em;
+    height: 38vh;
+}
+
+footer p {
+    padding: 15px;
+    color: rgb(134, 128, 128);
+    font-weight: bold;
+    font-family: 2em;
 }
