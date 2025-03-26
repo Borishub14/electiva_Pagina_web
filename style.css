@@ -151,3 +151,60 @@ footer p {
     font-weight: bold;
     font-family: 2em;
 }
+
+@media screen and (min-width: 1024px) {
+    header nav {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #hero {
+        height: 60vh;
+        text-align: left;
+        padding: 20px;
+    }
+
+    #hero h1 {
+        font-size: 3em;
+    }
+
+    #quienessomos .container,
+    #servicios .container,
+    #cotizacion .container {
+        padding: 50px 100px;
+    }
+
+    #servicios .carta {
+        display: inline-block;
+        width: 25%;
+        vertical-align: top;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    #formulario-contacto {
+        border-style: double;
+        flex-direction: column;
+        padding: auto;
+        position: relative;
+        background-color: antiquewhite;
+    }
+
+    #formulario-contacto button{
+        position: absolute;
+        bottom: -0.3px;
+        left: 20px;
+    }
+
+    textarea {
+        border: 2px solid;
+        padding: 20px;
+        width: 300px;
+        resize: none;
+        overflow: auto;
+        font-family: "Open Sans", sans-serif;
+    }
+}
